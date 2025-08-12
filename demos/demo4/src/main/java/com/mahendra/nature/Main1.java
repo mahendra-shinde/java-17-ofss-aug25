@@ -15,6 +15,10 @@ public class Main1 {
 			throwAnimal(ax);
 		}
 		
+		System.out.println("Lets drop them all in a lake");
+		for(Animal ax: animalPark) {
+			putInWater(ax);
+		}
 
 	}
 	
