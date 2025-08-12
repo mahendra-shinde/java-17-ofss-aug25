@@ -14,6 +14,10 @@ public class Account {
 		this.balance = balance;
 	}
 	
+	public void setAccNum(String accNum) {
+		this.accNum = accNum;
+	}
+	
 	public String getAccNum() {
 		return accNum;
 	}
