@@ -4,7 +4,7 @@ package com.mahendra.demo6;
 public abstract class Account {
 	private String accNum;
 	private String holderName;
-	private double balance;
+	private Double balance;
 	
 	public Account() {
 	}
@@ -33,10 +33,10 @@ public abstract class Account {
 	public void setHolderName(String holderName) {
 		this.holderName = holderName;
 	}
-	public double getBalance() {
+	public Double getBalance() {
 		return balance;
 	}
-	public void setBalance(double balance) {
+	public void setBalance(Double balance) {
 		this.balance = balance;
 	}
 	
