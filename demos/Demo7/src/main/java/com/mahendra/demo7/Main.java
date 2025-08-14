@@ -16,6 +16,8 @@ public class Main {
 			System.out.println("Please re-try again");
 		}catch(RuntimeException ex) {
 			System.out.println(ex.getMessage());
+		}finally {
+			System.out.println("End of Application ....");
 		}
 		}
 		
