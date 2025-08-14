@@ -42,6 +42,25 @@ public class InterestCalculator {
 		duration = Integer.parseInt(temp);
 	}
 	
+	public void input2()throws NumberFormatException {
+		Scanner sc = new Scanner(System.in);
+		String temp = null;
+		System.out.println("Enter principal amount :");
+		temp = sc.nextLine();
+		principal = Double.parseDouble(temp);
+		
+		System.out.println("Enter rate of interest :");
+		temp = sc.nextLine();
+		rateOfInterest = Double.parseDouble(temp);
+		
+		
+		System.out.println("Enter duration in months: ");
+		temp = sc.nextLine();
+		duration = Integer.parseInt(temp);
+	}
+	
+	
+	
 	public double calc() {
 		return (principal * (rateOfInterest/100/12) * duration);
 	}
