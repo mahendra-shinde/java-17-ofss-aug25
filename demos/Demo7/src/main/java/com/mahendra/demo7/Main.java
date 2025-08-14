@@ -14,6 +14,8 @@ public class Main {
 		}catch(NumberFormatException ex) {
 			System.out.println("Invalid value : "+ex.getMessage());
 			System.out.println("Please re-try again");
+		}catch(RuntimeException ex) {
+			System.out.println(ex.getMessage());
 		}
 		}
 		

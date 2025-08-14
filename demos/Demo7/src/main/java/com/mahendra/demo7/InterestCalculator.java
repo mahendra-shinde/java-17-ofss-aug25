@@ -49,14 +49,23 @@ public class InterestCalculator {
 		temp = sc.nextLine();
 		principal = Double.parseDouble(temp);
 		
+		if(principal < 10000 || principal > 10000000) {
+			throw new InterestCalculatorException(10000, 10000000);
+		}
+		
 		System.out.println("Enter rate of interest :");
 		temp = sc.nextLine();
 		rateOfInterest = Double.parseDouble(temp);
 		
+		if(rateOfInterest < 3 || rateOfInterest > 20 )
+			throw new InterestCalculatorException(3, 20);
 		
 		System.out.println("Enter duration in months: ");
 		temp = sc.nextLine();
 		duration = Integer.parseInt(temp);
+		
+		if(duration < 6 || duration > 120 )
+			throw new InterestCalculatorException(6, 120);
 	}
 	
 	
